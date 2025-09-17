@@ -22,8 +22,23 @@ class Operaciones:
     
     def sumar(self):
         self.resultado = "La suma de " + str(self.num1) + " + " + str(self.num2) + " es igula a " + str(self.num1 + self.num2)
+
+    def restar(self):
+        self.resultado = "La resta de " + str(self.num1) + " - " + str(self.num2) + " es igual a " + str(self.num1 - self.num2)
+
+    def multiplicacion(self):
+        self.resultado = "La multiplicacion de " + str(self.num1) + " * " + str(self.num2) + " es igual a " + str(self.num1 * self.num2)
+
+    def division(self):
+        if (self.num1 != 0):
+            self.resultado = "La division de " + str(self.num1) + " / " + str(self.num2) + " es igual a " + str(self.num1 / self.num2)
+        else:
+            self.resultado = 'No se puede dividir entre 0'
+    
+    def modulo(self):
+        self.resultado = "El resto de " + str(self.num1) + " % " + str(self.num2) + " es igual a " + str(self.num1 % self.num2)
+    
     
     def mostrarResultado(self):
         print(self.resultado)
-        
-        
+    
